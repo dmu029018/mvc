@@ -1,0 +1,8 @@
+{
+    "database":{
+        "user":"root",
+        "password":null,
+        "host":"localhost",
+        "dbname":"mvc_db"
+    }
+}
