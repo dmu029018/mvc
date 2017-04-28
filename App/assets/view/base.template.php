@@ -1,9 +1,11 @@
+<?php
+/*
+ * NO TOCAR ESTO SI NO SABES CÓMO FUNCIONA
+ */
+    use Core\View;
+?>
+
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <meta charset="UTF-8">
@@ -57,6 +59,7 @@ and open the template in the editor.
                 font-size:1.5rem;
                 background: #cdf;
                 border:1px solid #000;
+                padding:1em;
             }
             
             #navigation>a
@@ -64,8 +67,9 @@ and open the template in the editor.
                 text-decoration:none;
                 color: #69f;
                 border: 3px #000 outset;
-                border-radius: 10px 0px 10px 0px;
+                border-radius: 50px 0px 50px 0px;
                 background:#eef;
+                padding:1em;
             }
             
             #navigation>a:hover
@@ -73,7 +77,7 @@ and open the template in the editor.
                 color:#6f9;
             }
             
-            
+            #main
             
         </style>
     </head>
@@ -81,8 +85,8 @@ and open the template in the editor.
         <div id="container">
             <header id="header">
                 <hgroup>
-                    <h1>Nombre del sitio</h1>
-                    <h2>Nombre de la página</h2>
+                    <h1><?=View::site_title()?></h1>
+                    <h2><?=View::page_title()?></h2>
                 </hgroup>
             </header>
             <nav id="navigation">

@@ -16,4 +16,6 @@ spl_autoload_register('autoload_classes');
 
 use Core\View;
 
-View::Render('home');
+
+
+View::Render('home',[]);
