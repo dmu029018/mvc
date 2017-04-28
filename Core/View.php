@@ -22,9 +22,9 @@ class View {
             Self::$args['page_title']="Mi página";
         }
         
-        Self::$args['src']=VIEW_DIR."templates/"+Self::$view+".template.php";
+        Self::$args['src']=Self::VIEW_DIR."templates/"+Self::$view+".template.php";
         
-        include_once VIEW_DIR."base.template.php";
+        include_once Self::VIEW_DIR."base.template.php";
     }
     
     public static function __callStatic($name, $args)
