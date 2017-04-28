@@ -4,5 +4,8 @@
         "password":null,
         "host":"localhost",
         "dbname":"mvc_db"
+    },
+    "directories":{
+        "":""
     }
 }
