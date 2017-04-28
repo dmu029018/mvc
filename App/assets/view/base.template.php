@@ -1,6 +1,6 @@
 <?php
 /*
- * NO TOCAR ESTO SI NO SABES CÓMO FUNCIONA
+ * NO TOCAR
  */
     use Core\View;
 ?>
@@ -9,11 +9,15 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title><?=View::site_title()?></title>
         <style>
-            /*Introduce tus estilos aquí*/
+            /*
+            Aquí solamente deberían introducirse estilos relacionados con el layout de la página.
+            Para estilos concretos, usar hojas de estilos.    
+            */
             *
             {
+                /*RESET*/
                 margin:0;
                 padding:0;
             }
@@ -40,6 +44,7 @@
             #header>hgroup
             {
                 text-align:center;
+                text-shadow:1px 1px 1px #666;
             }
             
             #header>hgroup>h1
@@ -55,21 +60,23 @@
             #navigation
             {
                 display:flex;
+                flex-wrap:wrap;
                 justify-content:space-around;
                 font-size:1.5rem;
                 background: #cdf;
-                border:1px solid #000;
-                padding:1em;
+                border:1px solid #333;
+                padding:1rem;
             }
             
             #navigation>a
             {
                 text-decoration:none;
                 color: #69f;
+                text-shadow: 1px 1px 1px #000;
                 border: 3px #000 outset;
                 border-radius: 50px 0px 50px 0px;
                 background:#eef;
-                padding:1em;
+                padding:1rem;
             }
             
             #navigation>a:hover
@@ -78,8 +85,17 @@
             }
             
             #main
+            {
+                padding:1rem;
+            }
+            
+            li
+            {
+                margin-left:1rem;
+            }
             
         </style>
+        <link rel="stylesheet" src="">
     </head>
     <body>
         <div id="container">
@@ -97,7 +113,7 @@
                 <a href="">Ítem #5</a>
             </nav>
             <main id="main">
-                
+                <?=View::main_content()?>
             </main>
             <aside id="sidebar">
                 

@@ -8,6 +8,9 @@
     "views":{
         "site_name":"Nombre de mi sitio",
         "page_name":"Nombre de la página",
-        "base_template":"base.template.php"
+        "base_template":"base.template.php",
+        "base_stylesheet":[
+            "base.stylesheet.css"
+        ]
     }
 }
