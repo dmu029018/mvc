@@ -25,6 +25,12 @@ and open the template in the editor.
             {
                 display:flex;
                 justify-content:space-around;
+                font-size:1.25rem;
+            }
+            
+            #navigation>a
+            {
+                text-decoration:none;
             }
             
         </style>
