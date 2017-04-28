@@ -10,6 +10,18 @@ and open the template in the editor.
         <title></title>
         <style>
             /*Introduce tus estilos aquí*/
+            *
+            {
+                margin:0;
+                padding:0;
+            }
+            
+            body
+            {
+                font-family: helvetica;
+                font-size:16px;
+            }
+            
             #container
             {
                 width:80%;
@@ -18,20 +30,50 @@ and open the template in the editor.
             
             #header
             {
-                background:#333;
+                padding:1em;
+                background:#000;
+                color:#fff;
+            }
+            
+            #header>hgroup
+            {
+                text-align:center;
+            }
+            
+            #header>hgroup>h1
+            {
+                
+            }
+            
+            #header>hgroup>h2
+            {
+                color:#aaa;
             }
             
             #navigation
             {
                 display:flex;
                 justify-content:space-around;
-                font-size:1.25rem;
+                font-size:1.5rem;
+                background: #cdf;
+                border:1px solid #000;
             }
             
             #navigation>a
             {
                 text-decoration:none;
+                color: #69f;
+                border: 1px solid #333;
+                border-radius: 10px 0px 10px 0px;
+                background:#eef;
             }
+            
+            #navigation>a:hover
+            {
+                color:#6f9;
+            }
+            
+            
             
         </style>
     </head>
