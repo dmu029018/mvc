@@ -63,7 +63,7 @@ and open the template in the editor.
             {
                 text-decoration:none;
                 color: #69f;
-                border: 1px solid #333;
+                border: 3px #000 outset;
                 border-radius: 10px 0px 10px 0px;
                 background:#eef;
             }
