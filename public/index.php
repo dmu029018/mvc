@@ -15,11 +15,13 @@ function autoload_classes($cls)
 //registramos el autoload autoload_classes
 spl_autoload_register('autoload_classes');
 
-use Core\View;
+use Controller;
 
-View::Render('home',[
-    "saludo"=>"Hola Mundo",
-    "variable1"=>"Valor de la variable 1",
-    "variable2"=>"Valor de la variable 2",
-    "variable3"=>"Valor de la variable 3",
-]);
+/**
+ * Controlador frontal de la aplicación
+ * 
+ */
+
+$ctrl=new HomeController();
+
+
