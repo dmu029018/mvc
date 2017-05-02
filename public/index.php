@@ -15,13 +15,11 @@ function autoload_classes($cls)
 //registramos el autoload autoload_classes
 spl_autoload_register('autoload_classes');
 
-use Controller;
-
+use Core;
 /**
  * Controlador frontal de la aplicación
  * 
  */
 
-$ctrl=new HomeController();
-
+action("home","index",[saludo=>"Hola mundo"]);
 
